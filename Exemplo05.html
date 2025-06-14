@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/cgi-bin/post-query">
+        Qual o seu primeiro nome?
+        <input type="text" name="primeiro_nome" value="carlos">
+    </form>
+    <br/>
+    
+    <form method="post" action="/cgi-bin/post-query">
+        Qual a sua idade?
+        <input type="text" name="idade" value="25">
+    </form>
+    <br/>
+    
+    <form method="post" action="/cgi-bin/post-query">
+        Qual o seu esporte favorito?
+        <input type="text" name="esporte_favorito" value="futebol">
+    </form>
+    <br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+        Informe sua senha de acesso (8 caracteres)
+        <input type="password" name="sua_senha" value="Mg" size="8" maxlength="8">
+    </form>
+    <br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+        você não pode visualizar nada aqui embaixo
+        <input type="hidden" name="nome_oculto" value="form12" >
+    </form>
+    <br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+       Por favor, excreva aqui suas sugestões, duvidas e críticas:<BR>
+        <textarea name="critica" rows="10" cols="60" >
+        Gostaria de obter mais informações sobre este servidor? Grato.
+        </textarea>
+    </form>
+    <br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+        Onde você pretende fazer turismo nas ferias?
+        <select name="lugare_para_ver" >
+            <option>Fortaleza</option>
+            <option value="sul">Florianopolis ou Porto Alegre ou Santa Catarina</option>
+            <option>Rio de Janeiro</option>
+            <option selected>Brasilia</option>
+            <option value="Amazonia">Manaus</option>
+            <option>Acrê</option>
+        </select>
+    </form>
+    <br/>
+
+    <form method="post" action="/cgi-bin/post-query">
+        Que facilidade de acomodação voê deseja?<BR>
+        <select name="opcional" multiple size="5" >
+            <option>Televisão</option>
+            <option value="casal" selected>Cama de Casal</option>
+            <option>Ar Condicionado</option>
+            <option>Fax</option>
+            <option selected>Modem V.34</option>
+            <option>Sauna</option>
+            <option>Frigo-Bar</option>
+            <option>Lavanderia</option>
+        </select>
+    </form>
+    <br/>
+
+    <form action="/action_page.php">
+        <input type="checkbox" name="veicle1" value="Bike"/> I have a bike<br/>
+        <input type="checkbox" name="veicle2" value="Car"/> I have a car<br/>
+        <input type="checkbox" name="veicle3" value="Boat" checked/> I have a boat<br/>
+        <input type="submit" value="Submit"/>
+    </form>
+    <br/>
+
+    <form action="/action_page.php">
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="male"/> Male<br/>
+        <input type="radio" name="gender" value="famale"/> Famale<br/>
+        <input type="radio" name="gender" value="other"/> Other<br/>
+
+        <p>Please select your age:</p>
+        <input type="radio" name="age" value="30"/> 0 - 30<br/>
+        <input type="radio" name="age" value="60"/> 31 - 60<br/>
+        <input type="radio" name="age" value="100"/> 61 - 100<br/>
+        
+        <input type="submit" value="Submit"/>
+
+    </form>
+    <br/>
+
+
+</body>
+</html>
